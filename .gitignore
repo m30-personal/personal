@@ -1,0 +1,7 @@
+# Apps Script contains deployment-specific configuration and must stay local.
+google-apps-script/
+
+# Local/editor and dependency output.
+.clasp.json
+node_modules/
+*.log
