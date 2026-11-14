@@ -520,16 +520,65 @@
                 </div>
               </fieldset>
               <div class="virtual-prices" aria-live="polite">
-                <div class="pricing-option">
-                  <span>5 sessions</span>
-                  <strong data-duration="30">$200</strong>
-                  <strong data-duration="45" hidden>$250</strong>
-                </div>
-                <div class="pricing-option">
-                  <span>10 sessions</span>
-                  <strong data-duration="30">$375</strong>
-                  <strong data-duration="45" hidden>$475</strong>
-                </div>
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th scope="col" aria-label="Package"></th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Per session</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">5 sessions</th>
+                      <td>
+                        <span data-duration="30">$200</span>
+                        <span data-duration="45" hidden>$250</span>
+                      </td>
+                      <td>
+                        <span data-duration="30">$40</span>
+                        <span data-duration="45" hidden>$50</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8 sessions</th>
+                      <td>
+                        <span data-duration="30">$304</span>
+                        <span data-duration="45" hidden>$384</span>
+                      </td>
+                      <td>
+                        <span data-duration="30">$38</span>
+                        <span data-duration="45" hidden>$48</span>
+                      </td>
+                    </tr>
+                    <tr class="featured-package">
+                      <th scope="row">
+                        10 sessions<span class="visually-hidden">
+                          (featured package)</span
+                        >
+                      </th>
+                      <td>
+                        <span data-duration="30">$350</span>
+                        <span data-duration="45" hidden>$450</span>
+                      </td>
+                      <td>
+                        <span data-duration="30">$35</span>
+                        <span data-duration="45" hidden>$45</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">12 sessions</th>
+                      <td>
+                        <span data-duration="30">$408</span>
+                        <span data-duration="45" hidden>$528</span>
+                      </td>
+                      <td>
+                        <span data-duration="30">$34</span>
+                        <span data-duration="45" hidden>$44</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <ul class="pricing-features">
@@ -544,28 +593,52 @@
           <article class="pricing-card is-selected">
             <div>
               <h3>One-on-One</h3>
-              <p class="pricing-kicker">Coaching built around you</p>
+              <p class="pricing-kicker">45-minute sessions</p>
               <p class="pricing-intro">
                 Focused coaching with a plan for your goals.
               </p>
             </div>
             <div class="pricing-options pricing-options-panel">
-              <div class="pricing-option">
-                <span>5 sessions</span>
-                <strong>$325</strong>
-              </div>
-              <div class="pricing-option">
-                <span>8 sessions</span>
-                <strong>$520</strong>
-              </div>
-              <div class="pricing-option">
-                <span>10 sessions</span>
-                <strong>$600</strong>
-              </div>
-              <div class="pricing-option">
-                <span>12 sessions</span>
-                <strong>$660</strong>
-              </div>
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th scope="col" aria-label="Package"></th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Per session</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Single session</th>
+                    <td>$70</td>
+                    <td>$70</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5 sessions</th>
+                    <td>$325</td>
+                    <td>$65</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8 sessions</th>
+                    <td>$480</td>
+                    <td>$60</td>
+                  </tr>
+                  <tr class="featured-package">
+                    <th scope="row">
+                      10 sessions<span class="visually-hidden">
+                        (featured package)</span
+                      >
+                    </th>
+                    <td>$560</td>
+                    <td>$56</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12 sessions</th>
+                    <td>$648</td>
+                    <td>$54</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <ul class="pricing-features">
               <li>Professional coaching and instruction</li>
@@ -624,7 +697,7 @@
                 <div class="session-presets" aria-hidden="true">
                   <span>5</span>
                   <span>8</span>
-                  <span>10</span>
+                  <span class="is-featured">10</span>
                   <span>12</span>
                 </div>
               </div>

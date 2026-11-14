@@ -43,7 +43,7 @@ pricingCards.forEach((card) => {
 });
 
 const virtualPrices = Array.from(
-  document.querySelectorAll(".virtual-prices strong[data-duration]"),
+  document.querySelectorAll(".virtual-prices [data-duration]"),
 );
 
 function updateVirtualPricing() {
@@ -110,9 +110,9 @@ const groupSessionMarkers = Array.from(
 );
 const groupSessionOptions = [5, 8, 10, 12];
 const groupPrices = {
-  2: [300, 480, 550, 600],
-  3: [325, 520, 600, 660],
-  4: [275, 550, 500, 540],
+  2: [225, 344, 420, 492],
+  3: [175, 272, 330, 384],
+  4: [150, 232, 280, 324],
 };
 let groupPriceAnimation;
 

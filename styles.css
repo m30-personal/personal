@@ -615,29 +615,79 @@ h3 {
 
 
 
-.pricing-option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.35rem 0;
+.pricing-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0.82rem;
 }
 
-.pricing-option + .pricing-option {
+.pricing-table th:first-child,
+.pricing-table td:first-child {
+  width: 46%;
+}
+
+.pricing-table th:nth-child(2),
+.pricing-table td:nth-child(2) {
+  width: 25%;
+}
+
+.pricing-table th:nth-child(3),
+.pricing-table td:nth-child(3) {
+  width: 29%;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 0.45rem 0.15rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.pricing-table thead th {
+  color: var(--muted);
+  font-size: 0.64rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.pricing-table thead th:not(:first-child),
+.pricing-table td {
+  text-align: right;
+}
+
+.pricing-table thead th:last-child,
+.pricing-table td:last-child {
+  padding-left: 0.45rem;
+  border-left: 1px solid var(--border);
+}
+
+.pricing-table tbody tr + tr {
   border-top: 1px solid var(--border);
 }
 
-.pricing-option span {
+.pricing-table tbody th {
   color: var(--muted);
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
-.pricing-option strong {
-  flex-shrink: 0;
-  margin: 0;
+.pricing-table td {
+  color: var(--text);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pricing-table [data-duration][hidden] {
+  display: none;
+}
+
+.pricing-table .featured-package th,
+.pricing-table .featured-package td,
+.session-presets span.is-featured {
   color: var(--accent);
-  font-size: 1rem;
-  letter-spacing: 0;
+  font-weight: 800;
 }
 
 .pricing-features {
